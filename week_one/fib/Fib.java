@@ -1,3 +1,5 @@
+package fib;
+
 import java.util.*;
 
 class Fib {

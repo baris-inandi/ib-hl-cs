@@ -1,3 +1,5 @@
+package apples;
+
 import java.util.*;
 
 public class Apples {
