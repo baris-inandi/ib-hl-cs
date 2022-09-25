@@ -32,9 +32,13 @@ public class HW1 {
         do {
             System.out.print("Guess a number: ");
             user = sc.nextInt();
-            System.out.println("Try again: " + (user > num ? "Too high" : "Too low"));
+            System.out.println(
+                    user > num
+                            ? "Too high"
+                            : user < num
+                                    ? "Too low"
+                                    : "Correct!");
         } while (user != num);
-        System.out.println("Correct answer! " + num);
     }
 
     public static void main(String[] args) {
