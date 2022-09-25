@@ -5,6 +5,7 @@ public class HW1 {
 
     public static final Scanner sc = new Scanner(System.in);
 
+    // TASK 1
     public static void task1(int num1, int num2) {
         int answer = num1 + num2;
         String question = String.format("What is %d+%d?: ", num1, num2);
@@ -13,6 +14,7 @@ public class HW1 {
         while (answer != sc.nextInt());
     }
 
+    // TASK 2
     public static void task2() {
         int jumps = 0;
         while (!sc.nextLine().equalsIgnoreCase("y")) {
@@ -22,10 +24,12 @@ public class HW1 {
         System.out.printf("You jumped %d times%n", jumps);
     }
 
+    // TASK 3
     public static void task3(int repeats) {
         IntStream.rangeClosed(1, repeats).forEach(a -> System.out.printf("I jumped %d time(s)!%n", a));
     }
 
+    // TASK 4
     public static void task4() {
         int num = (int) (Math.random() * 50);
         int user;
