@@ -18,8 +18,7 @@ public class HW1 {
     public static void task2() {
         int jumps = 0;
         while (!sc.nextLine().equalsIgnoreCase("y")) {
-            System.out.print("Tired yet? [y/N] ");
-            ++jumps;
+            System.out.printf("Jump %d: Tired yet? [y/N] ", ++jumps);
         }
         System.out.printf("You jumped %d times%n", jumps);
     }
