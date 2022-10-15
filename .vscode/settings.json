@@ -1,7 +1,9 @@
 {
     "cSpell.words": [
         "accum",
+        "disemvowel",
         "javac"
     ],
-    "java.dependency.packagePresentation": "hierarchical"
+    "java.dependency.packagePresentation": "hierarchical",
+    "github.copilot.inlineSuggest.enable": false
 }
