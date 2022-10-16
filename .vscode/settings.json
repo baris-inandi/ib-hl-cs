@@ -1,9 +1,8 @@
 {
-    "cSpell.words": [
-        "accum",
-        "disemvowel",
-        "javac"
-    ],
     "java.dependency.packagePresentation": "hierarchical",
-    "github.copilot.inlineSuggest.enable": false
+    "github.copilot.inlineSuggest.enable": false,
+    "tabnine.disableFileRegex": [
+        "*"
+    ],
+    "cSpell.enabled": false
 }
