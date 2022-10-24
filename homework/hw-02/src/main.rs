@@ -3,7 +3,7 @@
  * 1. for n students (n = 5) create 3 arrays: exam, quiz, final
  * final = exam * 0.4 + quiz * 0.3
  * 2. populate exam and quiz arrays randomly
- * 3. calculate final scores and write in final array
+ * 3. calculate final scores and writeln in final array
  * 4. calculate the average, max and min scores of the class.
  * 5. score to pass is average/2. Create 2 arrays: fail,pass
  * separate fails and passes in different arrays
@@ -100,25 +100,25 @@ impl Class {
 impl std::fmt::Display for Class {
     // This trait requires `fmt` with this exact signature.
     fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
-        write!(f, "")?;
-        write!(f, "STUDENTS:\t{} students registered.", self.students.len())?;
-        write!(f, "MIN GRADE:\t{:.2}", self.stats.min_grade)?;
-        write!(f, "MAX GRADE:\t{:.2}", self.stats.max_grade)?;
-        write!(f, "AVERAGE GRADE:\t{:.2}", self.stats.average_grade)?;
+        writeln!(f, "")?;
+        writeln!(f, "STUDENTS:\t{} students registered.", self.students.len())?;
+        writeln!(f, "MIN GRADE:\t{:.2}", self.stats.min_grade)?;
+        writeln!(f, "MAX GRADE:\t{:.2}", self.stats.max_grade)?;
+        writeln!(f, "AVERAGE GRADE:\t{:.2}", self.stats.average_grade)?;
 
         // print passing threshold and get passing and failing students
-        write!(f, "PASSING GRADE:\t{:.2}", self.stats.passing_grade)?;
-        write!(
+        writeln!(f, "PASSING GRADE:\t{:.2}", self.stats.passing_grade)?;
+        writeln!(
             f,
             "PASSING:\t{:?} students passing.",
             self.passing_students().len()
         )?;
-        write!(
+        writeln!(
             f,
             "FAILING:\t{:?} students failing.",
             self.failing_students().len()
         )?;
-        write!(f, "")
+        writeln!(f, "")
     }
 }
 
