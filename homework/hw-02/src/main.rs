@@ -98,7 +98,6 @@ impl Class {
 
 // display method for struct `Class`
 impl std::fmt::Display for Class {
-    // This trait requires `fmt` with this exact signature.
     fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
         writeln!(f, "")?;
         writeln!(f, "STUDENTS:\t{} students registered.", self.students.len())?;
