@@ -96,26 +96,35 @@ impl Class {
     }
 }
 
+// display method for struct `Class`
+impl std::fmt::Display for Class {
+    // This trait requires `fmt` with this exact signature.
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "")?;
+        write!(f, "STUDENTS:\t{} students registered.", self.students.len())?;
+        write!(f, "MIN GRADE:\t{:.2}", self.stats.min_grade)?;
+        write!(f, "MAX GRADE:\t{:.2}", self.stats.max_grade)?;
+        write!(f, "AVERAGE GRADE:\t{:.2}", self.stats.average_grade)?;
+
+        // print passing threshold and get passing and failing students
+        write!(f, "PASSING GRADE:\t{:.2}", self.stats.passing_grade)?;
+        write!(
+            f,
+            "PASSING:\t{:?} students passing.",
+            self.passing_students().len()
+        )?;
+        write!(
+            f,
+            "FAILING:\t{:?} students failing.",
+            self.failing_students().len()
+        )?;
+        write!(f, "")
+    }
+}
+
 fn main() {
     // create a class with 5 random students with random grades
     let class = Class::random_class(5);
-
     // print class statistics
-    println!("");
-    println!("STUDENTS:\t{} students registered.", class.students.len());
-    println!("MIN GRADE:\t{:.2}", class.stats.min_grade);
-    println!("MAX GRADE:\t{:.2}", class.stats.max_grade);
-    println!("AVERAGE GRADE:\t{:.2}", class.stats.average_grade);
-
-    // print passing threshold and get passing and failing students
-    println!("PASSING GRADE:\t{:.2}", class.stats.passing_grade);
-    println!(
-        "PASSING:\t{:?} students passing.",
-        class.passing_students().len()
-    );
-    println!(
-        "FAILING:\t{:?} students failing.",
-        class.failing_students().len()
-    );
-    println!("");
+    println!("{}", class);
 }
