@@ -28,6 +28,15 @@ pub struct Class {
     pub grades: Vec<f32>,
 }
 
+impl Class {
+    pub fn from(st: Vec<Student>) -> Self {
+        Self {
+            grades: st.iter().map(|i| i.average).collect(),
+            students: st,
+        }
+    }
+}
+
 fn main() {
     /*
      * Score calculator:
@@ -40,9 +49,12 @@ fn main() {
      * separate fails and passes in different arrays
      * 6. list all arrays
      */
-    dbg!(Student::random_student());
-    dbg!(Student::random_student());
-    dbg!(Student::random_student());
-    dbg!(Student::random_student());
-    let exams: Vec<f32> = vec![]
+    let students = vec![
+        Student::random_student(),
+        Student::random_student(),
+        Student::random_student(),
+        Student::random_student(),
+        Student::random_student(),
+    ];
+    Class::from(students);
 }
