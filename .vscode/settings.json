@@ -1,6 +1,5 @@
 {
     "java.dependency.packagePresentation": "hierarchical",
-    "github.copilot.inlineSuggest.enable": false,
     "tabnine.disableFileRegex": [
         "*"
     ],
