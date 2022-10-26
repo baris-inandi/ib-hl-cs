@@ -124,6 +124,7 @@ impl std::fmt::Display for Class {
 fn main() {
     // create a class with 5 random students with random grades
     let class = Class::random_class(5);
-    // print class statistics
-    println!("{}", class);
+    // print class debug info and class statistics for view
+    dbg!(&class);
+    println!("{}", &class);
 }
