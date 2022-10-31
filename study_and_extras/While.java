@@ -1,4 +1,4 @@
-package exam_study;
+package study_and_extras;
 
 import java.util.Scanner;
 
