@@ -9,13 +9,13 @@ public class Matrix {
         for (int i = 0; i < columns; i++) {
             System.out.printf("%4s", i + 1);
         }
-        System.out.print("\n  ╔");
+        System.out.print("\n  ╭");
         for (int i = 0; i < columns; i++) {
-            System.out.print("════");
+            System.out.print("─".repeat(4));
         }
         System.out.println();
         for (int i = 0; i < rows; i++) { // for every row
-            System.out.print(i + 1 + " ║");
+            System.out.print(i + 1 + " │");
             for (int j = 0; j < columns; j++) { // row every column
                 if (studentID >= n) {
                     System.out.print("  ▒▒");
