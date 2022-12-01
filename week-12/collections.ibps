@@ -1,0 +1,4 @@
+COLLECTION.resetNext()
+loop while COLLECTION.hasNext()
+    output COLLECTION.getNext()
+end loop

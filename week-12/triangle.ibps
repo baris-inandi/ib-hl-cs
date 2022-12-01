@@ -1,0 +1,8 @@
+COUNTER = 1
+loop I from 1 to 6
+    loop J from 0 to I
+        output COUNTER
+        COUNTER = COUNTER + 1
+    end loop
+    output
+end loop
