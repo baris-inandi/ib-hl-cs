@@ -1,0 +1,7 @@
+sub fac(N)
+    if n <= 1 then
+        return 1
+    end if
+    return N * fac(N-1)
+
+output fac(5)
