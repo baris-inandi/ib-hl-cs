@@ -10,6 +10,7 @@ ___
 
 ___
 Given the following vegetables: potato, asparagus, lettuce, radish:
+___
 
 **(b)** Sketch a single linked list holding these vegetables *[2]*
 
@@ -32,10 +33,12 @@ ___
 ___
 **(d)** State the dynamic data structure suitable for maintaining this list of vegetables which will allow faster searching for a given vegetable name *[2]*
 
-The binary tree is the better option since its asymptotic time complexity is O(log n) for insertion and deletion.
+> The binary tree is the better option since its asymptotic time complexity is O(log n) for insertion and deletion.
 
 ___
 The vegetable names are input in the following order: potato, asparagus, lettuce, radish.
+___
+
 **(e)** Sketch the data structure suggested in the part (d) containing the vegetable names sorted in alphabetical order. *[3]*
 
 ```text
