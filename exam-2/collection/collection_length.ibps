@@ -1,0 +1,14 @@
+COLL = Collection(1,2,3,4,5,6)
+
+sub lengthOf(COLL)
+    COLL.resetNext()
+    COUNTER = 0
+    loop while COLL.hasNext()
+        COLL.getNext()
+        COUNTER += 1
+    end loop
+    COLL.resetNext()
+    return COUNTER
+end sub
+
+output lengthOf(COLL)

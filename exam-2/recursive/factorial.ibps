@@ -1,0 +1,10 @@
+sub fac(N)
+    if N < 2 then
+        return 1
+    end if
+    return N * fac(N-1)
+end sub
+
+loop I from 1 to 10
+    output fac(I)
+end loop

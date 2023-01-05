@@ -1,0 +1,10 @@
+sub fib(N)
+    if N < 2 then
+        return N
+    end if
+    return fib(N-1) + fib(N-2)
+end sub
+
+loop I from 1 to 10
+    output fib(I)
+end loop

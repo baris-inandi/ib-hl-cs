@@ -1,0 +1,30 @@
+/*
+2. Write a code segment that finds & displays the smallest even number in the two-dimensional MATRIXay of integers named
+numbers. You can assume as a precondition that numbers has been instantiated & is initialized to be full of positive integers
+that are both odd and even. Your code should automatically account for the number of rows and columns in numbers.
+Declare any other variables that you feel are necessary.
+*/
+
+sub findMaxEvenInMatrix(MATRIX)
+    MAX = 0
+    loop I from 0 to len(MATRIX)-1 // use MATRIX.length in exams
+        loop J from 0 to len(MATRIX[I])-1 // use MATRIX[I].length in exams
+            X = MATRIX[I][J]
+            if (X > MAX) AND (X mod 2 == 0) then
+                MAX = X
+            end if
+        end loop
+    end loop
+    return MAX
+end sub
+
+TEST = [
+    [1,2,5,6],
+    [8,9,4,10,11],
+    [1,2],
+    [5,6,3],
+    [6,5,3,6,8,2],
+    [1,8,941,2,2]
+]
+
+output findMaxEvenInMatrix(TEST)
