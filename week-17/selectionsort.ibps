@@ -1,0 +1,17 @@
+sub selectionSort(ARR)
+    N = len(ARR)
+    loop I from 0 to N-1
+        MIN = I
+        loop J from I to N-1
+            if ARR[J] < ARR[MIN] then
+                MIN = J
+            end if
+        end loop
+        TEMP = ARR[I]
+        ARR[I] = ARR[J]
+        ARR[J] = TEMP
+    end loop
+    return ARR
+end sub
+
+output selectionSort([64, 34, 25, 12, 22, 11, 90])

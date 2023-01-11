@@ -1,0 +1,15 @@
+sub bubbleSort(A)
+    N = len(A)
+    loop I from 0 to N-2
+        loop J from 0 to N-2-I
+            if A[J] > A[J+1] then
+                TEMP = A[J]
+                A[J] = A[J+1]
+                A[J+1] = TEMP
+            end if
+        end loop
+    end loop
+    return A
+end sub
+ 
+output bubbleSort([64, 34, 25, 12, 22, 11, 90])
