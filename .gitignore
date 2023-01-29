@@ -1,6 +1,6 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,java,python
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,macos,java,python
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,python,macos,java,windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,python,macos,java,windows
 
 ### Java ###
 # Compiled class file
@@ -221,6 +221,13 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+### Python Patch ###
+# Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
+poetry.toml
+
+# ruff
+.ruff_cache/
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -240,13 +247,33 @@ cython_debug/
 .history
 .ionide
 
-# Support for Project snippet scope
-.vscode/*.code-snippets
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
 
-# Ignore code-workspaces
-*.code-workspace
+# Dump file
+*.stackdump
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,java,python
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,python,macos,java,windows
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
