@@ -1,7 +1,5 @@
 {
-    "java.dependency.packagePresentation": "hierarchical",
-    "tabnine.disableFileRegex": [
-        "*"
-    ],
-    "cSpell.enabled": false
+  "java.dependency.packagePresentation": "hierarchical",
+  "tabnine.disableFileRegex": ["*"],
+  "cSpell.enabled": false
 }
