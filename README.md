@@ -21,7 +21,7 @@ A web-based minesweeper game written in SvelteKit and TypeScript
 A VSCode extension for the IB Computer Science Pseudocode language  
 [https://github.com/baris-inandi/vscode-ib-pseudocode](https://github.com/baris-inandi/vscode-ib-pseudocode)
 
-### IB CS Pseudocode Interpreter
+### IBPS IDE: the IB CS Pseudocode Integrated Development Environment 
 
-An interpreter for the IB Computer Science Pseudocode language, written in Rust.  
-[https://github.com/baris-inandi/ib-pseudocode-interpreter](https://github.com/baris-inandi/ib-pseudocode-interpreter)
+An integrated development environment and interpreter for the IB Pseudocode Language
+[https://github.com/baris-inandi/ibps-ide](https://github.com/baris-inandi/ibps-ide)
